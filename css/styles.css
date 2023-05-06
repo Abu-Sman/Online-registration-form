@@ -65,18 +65,18 @@ div > p {
 fieldset {
   border: none;
   border-top: 2px solid #19374d;
+  position: relative;
 }
 
 legend {
-  float: left;
+  position: absolute;
   font-size: 2rem;
   letter-spacing: -0.8px;
   font-weight: 900;
-  margin-bottom: 2.5rem;
 }
 
 legend + div {
-  clear: both;
+  margin-top: 5rem;
 }
 
 .wrapper {
@@ -124,7 +124,7 @@ input::placeholder {
 
 input[name$="name"]::placeholder,
 input[name$="email"]::placeholder {
-  float: right;
+  text-align: right;
 }
 
 select {
@@ -240,5 +240,9 @@ form + p {
 
   .wrapper label {
     flex-basis: 30%;
+  }
+
+  input[name*="zipcode"] {
+    width: 25%;
   }
 }
