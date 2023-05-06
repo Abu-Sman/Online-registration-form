@@ -112,7 +112,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border: inset 2px solid #19374d;
+  border-color: #19374d;
   background-color: #fff;
 }
 
