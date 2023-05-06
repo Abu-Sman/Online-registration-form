@@ -1,0 +1,232 @@
+/**********************************
+      GENERAL STYLES
+**********************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #19374d;
+  font-weight: 400;
+}
+
+/**********************************
+      HEADER STYLES
+**********************************/
+header {
+  text-align: center;
+  background-color: #19374d;
+  color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+/**********************************
+      FORM STYLES
+**********************************/
+form {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+form > div {
+  text-align: center;
+  border-bottom: 4px solid #19374d;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  margin-bottom: 1rem;
+}
+
+div > p {
+  font-size: 1.4rem;
+  color: #868e96;
+}
+
+fieldset {
+  border: none;
+  border-top: 2px solid #19374d;
+}
+
+legend {
+  float: left;
+  font-size: 2rem;
+  letter-spacing: -0.8px;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+}
+
+legend + div {
+  clear: both;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.wrapper:last-child {
+  margin-bottom: 0;
+  width: 77%;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 1.8rem;
+  color: inherit;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #19374d;
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 1.4rem;
+  float: right;
+  color: #868e96;
+}
+
+select {
+  color: #adb5bd;
+  appearance: none;
+}
+
+optgroup option {
+  color: #19374d;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.custom-arrow {
+  width: 4rem;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-arrow::before {
+  top: 45%;
+  border-bottom-color: #000;
+}
+
+.custom-arrow::after {
+  top: 70%;
+  border-top-color: #000;
+}
+
+input[name*="zipcode"] {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+
+.container label {
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.8rem;
+}
+
+button {
+  background-color: #20c997;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 3rem;
+}
+
+button:hover {
+  background-color: #099268;
+}
+
+form + p {
+  text-align: center;
+  font-style: italic;
+  color: #adb5bd;
+  margin-bottom: 5rem;
+}
+
+/* Dry classes */
+.padding {
+  padding: 3rem 0;
+}
+/**********************************
+      MEDIA QUERIES
+**********************************/
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .wrapper label {
+    flex-basis: 30%;
+  }
+}
