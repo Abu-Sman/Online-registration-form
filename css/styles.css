@@ -106,19 +106,25 @@ textarea {
   border-radius: 5px;
   background-color: #e9ecef;
   border: none;
+  transition: 0.3s background-color ease-in-out;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #19374d;
+  border: inset 2px solid #19374d;
+  background-color: #fff;
 }
 
 input::placeholder {
   font-style: italic;
   font-size: 1.4rem;
-  float: right;
   color: #868e96;
+}
+
+input[name$="name"]::placeholder,
+input[name$="email"]::placeholder {
+  float: right;
 }
 
 select {
@@ -178,6 +184,12 @@ input[name*="zipcode"] {
 
 .container:last-child {
   margin-bottom: 0;
+}
+
+legend + .container {
+  background-color: #e9ecef;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .container label {
