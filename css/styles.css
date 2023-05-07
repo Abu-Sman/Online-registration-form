@@ -172,7 +172,7 @@ optgroup option {
 }
 
 input[name*="zipcode"] {
-  width: 50%;
+  width: 140px;
 }
 
 .container {
@@ -243,6 +243,6 @@ form + p {
   }
 
   input[name*="zipcode"] {
-    width: 25%;
+    width: 127px;
   }
 }
